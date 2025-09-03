@@ -24,7 +24,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 
 type LoginScreenProps = NativeStackNavigationProp<RootStackParamList, "Login">;
 
-const PUBLIC_URL = "https://b1c3ea2e0901.ngrok-free.app";
+const PUBLIC_URL = "https://63e3dc2a2c6f.ngrok-free.app";
 
 export default function LoginScreen() {
   const navigator = useNavigation<LoginScreenProps>();
