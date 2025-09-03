@@ -30,8 +30,28 @@ Key screens/components:
 
 ## 📸 Screens (placeholders)
 Add screenshots/GIFs here after running the app:
+
 - Splash
-- Login / Register
-- Dashboard (groups & toggle completion)
+  
+<img width="396" height="820" alt="image" src="https://github.com/user-attachments/assets/778a323e-25d8-4e62-bacd-97de708dfe3d" />
+
+- Login
+  
+<img width="381" height="813" alt="image" src="https://github.com/user-attachments/assets/09c82ee2-4fff-48d0-90f0-013f7bfebb82" />
+
+- Register
+  
+<img width="386" height="817" alt="image" src="https://github.com/user-attachments/assets/d0fadd32-778f-4e64-8e70-0f7dc7ccbe0e" />
+
+- Dashboard
+  
+<img width="391" height="824" alt="image" src="https://github.com/user-attachments/assets/d11375fd-dbd2-4b71-b69b-da301af5ed1f" />
+
 - Create Tasks (date picker)
+  
+<img width="381" height="829" alt="image" src="https://github.com/user-attachments/assets/5d4aa210-1d31-4984-9848-b710ad2c8e69" />
+
+<img width="379" height="828" alt="image" src="https://github.com/user-attachments/assets/07819565-936f-4eee-8c33-df6506b20cef" />
+
+
 
