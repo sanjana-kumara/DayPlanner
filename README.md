@@ -1,4 +1,4 @@
-# React Native Day Planner (Expo)
+# Day Planner 
 
 A simple day planner app built with React Native and Expo. It includes authentication, a dashboard that groups tasks by date, and a task creation screen with date/time picking. The app persists the logged-in user with AsyncStorage and talks to a Java servlet backend over HTTP.
 
