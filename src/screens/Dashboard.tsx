@@ -17,7 +17,9 @@ import type { RootStackParamList } from "../../App";
 
 type DashboardNav = NativeStackNavigationProp<RootStackParamList, "Dashboard">;
 
-const PUBLIC_URL = "https://63e3dc2a2c6f.ngrok-free.app";
+// const PUBLIC_URL = "https://63e3dc2a2c6f.ngrok-free.app";
+
+const PUBLIC_URL = process.env.EXPO_PUBLIC_APP_PUBLIC_URL;
 
 type TaskItem = {
   id: number;

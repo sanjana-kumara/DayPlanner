@@ -26,7 +26,9 @@ type RegisterScreenProps = NativeStackNavigationProp<
   "Register"
 >;
 
-const PUBLIC_URL = "https://b1c3ea2e0901.ngrok-free.app";
+// const PUBLIC_URL = "https://b1c3ea2e0901.ngrok-free.app";
+
+const PUBLIC_URL = process.env.EXPO_PUBLIC_APP_PUBLIC_URL;
 
 export default function RegisterScreen() {
   const navigator = useNavigation<RegisterScreenProps>();

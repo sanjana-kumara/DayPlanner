@@ -24,7 +24,9 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 
 type LoginScreenProps = NativeStackNavigationProp<RootStackParamList, "Login">;
 
-const PUBLIC_URL = "https://63e3dc2a2c6f.ngrok-free.app";
+// const PUBLIC_URL = "https://63e3dc2a2c6f.ngrok-free.app";
+
+const PUBLIC_URL = process.env.EXPO_PUBLIC_APP_PUBLIC_URL;
 
 export default function LoginScreen() {
   const navigator = useNavigation<LoginScreenProps>();
@@ -33,7 +35,11 @@ export default function LoginScreen() {
   const [getPassword, setPassword] = React.useState("");
 
   // Store credentials in AsyncStorage
-  const saveCredentials = async (email: string, password: string , userName: string) => {
+  const saveCredentials = async (
+    email: string,
+    password: string,
+    userName: string
+  ) => {
     try {
       await AsyncStorage.setItem("userEmail", email);
       await AsyncStorage.setItem("userPassword", password);
@@ -108,9 +114,12 @@ export default function LoginScreen() {
                   if (response.ok) {
                     const responseData = await response.json();
                     if (responseData.status) {
-                      
                       // Save email & password to AsyncStorage
-                      await saveCredentials(getEmail, getPassword , responseData.userName);
+                      await saveCredentials(
+                        getEmail,
+                        getPassword,
+                        responseData.userName
+                      );
 
                       Dialog.show({
                         type: ALERT_TYPE.SUCCESS,
