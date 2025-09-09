@@ -19,9 +19,9 @@ import { ALERT_TYPE, Dialog, Toast } from "react-native-alert-notification";
 
 type TasksScreenProps = NativeStackNavigationProp<RootStackParamList, "Tasks">;
 
-// const PUBLIC_URL = "https://63e3dc2a2c6f.ngrok-free.app";
+const PUBLIC_URL = "https://7746448d6b3f.ngrok-free.app";
 
-const PUBLIC_URL = process.env.EXPO_PUBLIC_APP_PUBLIC_URL;
+// const PUBLIC_URL = process.env.EXPO_PUBLIC_APP_PUBLIC_URL;
 
 
 export default function TasksScreen() {
